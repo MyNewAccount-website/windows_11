@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.WallPapers {
+    background-image: url("./Materials/Windows_11_WallPapers.jpg");
+    background-repeat: no-repeat;
+    filter: blur(15px);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.Login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.user_icon_wrapper {
+    width: 185px;
+    height: 185px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50%;
+    padding: 32px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.user_icon {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.name_user {
+    color: whitesmoke;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 28px;
+}
+
+.input_box {
+    position: relative;
+    width: 285px;
+    margin-bottom: 25px;
+}
+
+.input {
+    background-color: rgba(0, 30, 55, 0.14);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 9px 40px 9px 12px;
+    width: 100%;
+    border: 1px solid rgba(0, 115, 230, 0.865);
+    border-radius: 5px;
+    color: whitesmoke;
+    border-bottom: 2px solid rgb(179, 197, 205);
+    outline: none;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.input:hover,
+.input:focus {
+    background-color: #012055e4;
+    border: 1px solid rgba(0, 90, 209, 0.865);
+    border-bottom: 2px solid rgb(0, 186, 219);
+}
+
+.input::placeholder {
+    color: whitesmoke;
+}
+
+::selection {
+    color: white;
+    background: rgb(0, 186, 219);
+}
+
+.input_box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: auto;
+}
+
+.input_box i:hover {
+    background-color: rgb(0, 149, 183);
+    color: rgb(48, 48, 48);
+}
+
+.eye_icon {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;   
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: 3px;
+    object-fit: contain;
+    display: none;
+    transition: background-color 0.2s;
+    cursor: auto;
+}
+
+.eye_icon:hover {
+    background-color: rgba(141, 184, 253, 0.185);
+}
+
+.eye_icon.show {
+    display: block;
+}
+
+.inputPassword {
+    box-sizing: border-box;
+}
+
+.input_Password {
+    margin-bottom: 0;
+}
+
+.describe_text {
+    color: whitesmoke;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    margin-left: 24px;
+    display: none;
+}
+
+.describe_text.show {
+    display: block;
+}
+
+.describe_text.hide {
+    display: none;
+}
+
+.info_text,
+.opciones_user,
+.larioja_text {
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: color 0.2s ease;
+    text-align: center;
+}
+
+.larioja_text {
+    font-size: 14px;
+}
+
+.opciones_user {
+    font-size: 16px;
+}
+
+.info_text:hover,
+.opciones_user:hover,
+.larioja_text:hover {
+    color: rgb(199, 199, 199);
+}
+
+.larioja_text {
+    margin-top: 18px;
+}
+
+.info_text {
+    font-size: 14px;
+}
+
+.other_users {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+}
+
+.random_user {
+    margin-bottom: 5px;
+}
+
+.users {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-weight: 450;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.users:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.users.selected {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.users.deselected {
+    background-color: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+}
+
+.users_icon {
+    border-radius: 50%;
+    background-color: whitesmoke;
+    object-fit: contain;
+    pointer-events: none;
+    padding: 7px;
+    width: 40px;
+    height: 40px;
+}
+
+.text_other_user {
+    padding-left: 12px;
+    font-size: 14px;
+}
+
+.random_user {
+    background-color: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+}
+
+.accessibility-icons {
+  position: absolute;
+  right: 25px;
+  bottom: 0px;
+  width: 145px;
+  height: 85px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-container {
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 200ms ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: auto;
+}
+
+.icon-container:hover {
+  background-color: rgba(141, 184, 253, 0.185);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.icon-image {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+  cursor: auto;
+}
+.loading {
+    width: 60px;
+    height: 60px;
+    animation: rotate 4s linear infinite;
+    display: none;
+}
+
+@keyframes rotate {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+.loading circle {
+    fill: none;
+    stroke: whitesmoke;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: 0;
+    animation: dash 2s ease-in-out infinite;
+}
+
+@keyframes dash {
+    0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+    }
+    50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+    }
+    100% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: -125;
+    }
+}
