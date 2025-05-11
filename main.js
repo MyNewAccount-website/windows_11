@@ -19,6 +19,7 @@ function Login (){
   input_login.style.display = "none";
   input_password.style.display = "none";
   login_button.style.display = "none";
+  eye_icon.style.display = "none";
 
   button_info.style.display = "none";
   info_text.style.display = "none";
